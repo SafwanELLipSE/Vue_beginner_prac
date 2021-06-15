@@ -31,20 +31,6 @@ export default {
 };
 </script>
 
-<style>
-.twoot-item{
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    border: 1px solid #dfe3E8;
-    box-shadow: border-box;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-.twoot-item:hover{
-    transform: scale(1.1, 1.1);
-}
-.twoot-item__user{
-    font-weight: bold;
-}
+<style scoped>
+@import '../assets/scss/TwootItem.css';
 </style>

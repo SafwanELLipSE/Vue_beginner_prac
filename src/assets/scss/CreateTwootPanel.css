@@ -1,0 +1,50 @@
+.create-twoot-panel {
+  margin-top: 20px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.create-twoot-panel textarea {
+  border: 1px solid #DFE3E8;
+  border-radius: 5px;
+}
+
+.create-twoot-panel .create-twoot-panel__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.create-twoot-panel .create-twoot-panel__submit .create-twoot-type {
+  padding: 10px 0;
+}
+
+.create-twoot-panel .create-twoot-panel__submit button {
+  padding: 5px 20px;
+  margin: auto 0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: deeppink;
+  font-weight: bold;
+}
+
+.create-twoot-panel.--exceeded {
+  color: red;
+  border-color: red;
+}
+
+.create-twoot-panel.--exceeded .create-twoot-panel__submit button {
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=CreateTwootPanel.css.map */

@@ -1,0 +1,54 @@
+.user-profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  width: 100%;
+  padding: 50px 0%;
+}
+
+.user-profile .user-profile__user-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #DFE3E8;
+}
+
+.user-profile .user-profile__user-panel .user-profile__admin-badge {
+  background: red;
+  color: white;
+  border-radius: 5px;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.user-profile__twoots-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.user-profile__create-twoot {
+  border-top: 1px solid #DFE3E8;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+}
+/*# sourceMappingURL=user.css.map */

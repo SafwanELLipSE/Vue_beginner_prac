@@ -1,0 +1,44 @@
+{
+    "users":[
+        {
+            "id": 1,
+            "username": "SagolMara",
+            "firstName": "Sagol",
+            "lastName": "Mara",
+            "email": "SagolMara@gmail.com",
+            "isAdmin": true,
+            "twoots":[
+                {"id": 1, "content": "Twotter IS Awazing!.."},
+                {"id": 2, "content": "Don't forgot to subscriber to the earth is square!!.."}
+
+            ]
+        },
+        {
+            "id": 1,
+            "username": "CarlosWilliams",
+            "firstName": "Carlos",
+            "lastName": "Williams",
+            "email": "buddy_muraz@yahoo.com",
+            "isAdmin": false,
+            "twoots": null
+        },
+        {
+            "id": 1,
+            "username": "JuanClare",
+            "firstName": "Juan",
+            "lastName": "E Clare",
+            "email": "nicola1999@yahoo.com",
+            "isAdmin": false,
+            "twoots": null
+        },
+        {
+            "id": 1,
+            "username": "AmandaMace",
+            "firstName": "Amanda D Mace",
+            "lastName": "D Mace",
+            "email": "lyda1995@gmail.com",
+            "isAdmin": false,
+            "twoots": null
+        }
+    ]
+}

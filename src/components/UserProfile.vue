@@ -10,6 +10,7 @@
             <div class="user-profile__follower-count">
                 <strong>Followers: </strong> {{ followers }}
             </div>
+            <CreateTwootPanel @add-twoot="addTwoot" />
         </div>  
         <div class="user-profile__twoots-wrapper">
             <TwootItem 
@@ -24,14 +25,15 @@
 
 <script>
 import TwootItem from "./TwootItem.vue";
+import CreateTwootPanel from "./CreateTwootPanel.vue";
 
 export default{
     name: 'UserProfile',
-    components: {TwootItem},
+    components: {CreateTwootPanel, TwootItem},
     data () {
         return{
-        followers: 0,
-        user: {
+            followers: 0,
+            user: {
                 id: 1,
                 username: 'SagolMara',
                 firstName: 'Sagol',
@@ -46,24 +48,27 @@ export default{
             },
         }
     },
-    watch: {
-        followers(newFollowerCount, oldFollowerCount){
-            if(oldFollowerCount < newFollowerCount){
-                console.log(`${this.user.username} has gain a follower....`)
-            }
-        }
-    },
-    computed: {
-        fullName(){
-            return `${this.user.firstName} ${this.user.lastName}`
-        }
-    },
+    // watch: {
+    //     followers(newFollowerCount, oldFollowerCount){
+    //         if(oldFollowerCount < newFollowerCount){
+    //             console.log(`${this.user.username} has gain a follower....`)
+    //         }
+    //     }
+    // },
+    // computed: {
+    //     fullName(){
+    //         return `${this.user.firstName} ${this.user.lastName}`
+    //     },
+    // },
     methods:{
-        followUser() {
-            this.followers++;
-        },
-        toggleFavourite(id){
-            console.log(`Favourite Tweet #${id}`);
+        // followUser() {
+        //     this.followers++;
+        // },
+        // toggleFavourite(id){
+        //     console.log(`Favourite Tweet #${id}`);
+        // },
+        addTwoot(twoot){
+            this.user.twoot.unshift({id: this.user.twoots.length + 1, content: this.newTwootContent})
         }
     },
     mounted(){
@@ -72,30 +77,6 @@ export default{
 }
 </script>
 
-<style>
-.user-profile{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 100%;
-    padding: 50px 0%;
-}
-.user-profile__user-panel{
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid #DFE3E8;
-}
-.user-profile__admin-badge{
-    background: red;
-    color: white;
-    border-radius: 5px;
-    margin-right: auto;
-    padding: 0 10px;
-}
-h1{
-    margin: 0;
-}
+<style scoped>
+@import '../assets/scss/UserProfile.css';
 </style>

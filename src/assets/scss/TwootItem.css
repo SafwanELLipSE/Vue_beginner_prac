@@ -1,0 +1,21 @@
+.twoot-item {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #dfe3E8;
+  -webkit-box-shadow: border-box;
+          box-shadow: border-box;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.twoot-item:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.twoot-item__user {
+  font-weight: bold;
+}
+/*# sourceMappingURL=TwootItem.css.map */
